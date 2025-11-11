@@ -1,0 +1,39 @@
+# Data directories
+data/
+
+# Environment and config
+.env
+config/*.json
+config/*.yaml
+!config/example_config.yaml
+
+# API Credentials (NEVER commit these!)
+credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

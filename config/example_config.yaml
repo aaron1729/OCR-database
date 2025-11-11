@@ -1,0 +1,35 @@
+ocr:
+  engines:
+    - tesseract
+    - google_vision
+    - aws_textract
+    - azure_vision
+
+  preprocessing:
+    deskew: true
+    enhance_contrast: true
+    denoise: true
+    binarize: false
+
+  confidence_threshold: 0.7
+
+llm:
+  provider: openai  # openai, anthropic, or gemini
+  model: gpt-4o
+  temperature: 0.2
+  max_tokens: 4000
+
+  reconciliation:
+    min_engines_required: 2  # Minimum OCR results needed before reconciliation
+    flag_threshold: 0.3  # Similarity threshold below which to flag discrepancies
+
+metadata:
+  extract_dates: true
+  extract_authors: true
+  extract_recipients: true
+  preserve_structure: true
+
+storage:
+  format: json  # json or database
+  output_dir: data/output
+  keep_intermediate: true  # Keep individual OCR results

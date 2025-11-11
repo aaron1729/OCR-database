@@ -1,0 +1,33 @@
+# PDF Processing
+pypdfium2==5.0.0  # Pure Python, no system dependencies (recommended)
+# pdf2image==1.17.0  # Alternative (requires poppler system package)
+PyPDF2==3.0.1
+pillow==10.4.0
+
+# Image Processing
+opencv-python==4.10.0.84
+numpy==1.26.4
+scikit-image==0.24.0
+
+# OCR Engines
+pytesseract==0.3.13
+google-cloud-vision==3.7.4
+boto3==1.34.162  # AWS Textract
+azure-cognitiveservices-vision-computervision==0.9.0
+
+# LLM Providers (optional - install as needed)
+openai==1.40.0
+anthropic==0.34.0
+google-generativeai==0.7.2
+
+# Data handling
+pandas==2.2.2
+pydantic==2.8.2
+
+# Configuration
+python-dotenv==1.0.1
+pyyaml==6.0.2
+
+# Utilities
+tqdm==4.66.5
+tenacity==9.0.0  # For retry logic
